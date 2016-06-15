@@ -77,11 +77,14 @@ Game.prototype.roll = function () {
 
   if (activePlayer.dice.diceValue === 0){
     this.nextPlayer();
-    $(displayScore )
+    $(displayScore + " p#score").text("Player Score:" + active.totalScore);
+    this.toggleActiveButtons();
   }
-
 }
-
+Game.prototype.toggleActiveButtons = function() {
+  var playerIndex = this.playerIndex
+  
+}
 
 //User Interface Logic
 $(function () {
