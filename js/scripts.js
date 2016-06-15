@@ -82,8 +82,12 @@ Game.prototype.roll = function () {
   }
 }
 Game.prototype.toggleActiveButtons = function() {
-  var playerIndex = this.playerIndex
-  
+  var playerIndex = this.playerIndex;
+
+  $('#'+ this.playerArray[0].playerID + 'button').prop('disabled', true):
+  $('#'+ this.playerArray[1].playerID + 'button').prop('disabled', true):
+  $('#'+ this.playerArray[activePlayerIndex].playerID + 'button').prop('disabled',false);
+  $('#'+ this.playerArray[activePlayerIndex].playerId + 'button.roll')
 }
 
 //User Interface Logic
